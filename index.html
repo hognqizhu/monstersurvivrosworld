@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Monster Survivors Online - A thrilling survival game where you battle endless waves of monsters. Free to play in your browser!">
+    <title>Monster Survivors Online - Survive Endless Monster Waves</title>
+    <link rel="canonical" href="https://monstersurvivorsworld.online/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071E3',
+                            darkblue: '#0077ED',
+                            green: '#2AC55E',
+                            indigo: '#5E5CE6',
+                            orange: '#FF9F0A',
+                            pink: '#FF375F',
+                            purple: '#BF5AF2',
+                            red: '#FF453A',
+                            teal: '#64D2FF',
+                            yellow: '#FFD60A',
+                            gray: {
+                                100: '#F5F5F7',
+                                200: '#E8E8ED',
+                                300: '#D2D2D7',
+                                400: '#AEAEB2',
+                                500: '#8E8E93',
+                                600: '#636366',
+                                700: '#48484A',
+                                800: '#3A3A3C',
+                                900: '#2C2C2E',
+                                950: '#1C1C1E'
+                            }
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-gentle': 'bounce 2s infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-gradient {
+            background: linear-gradient(135deg, #0071E3 0%, #5E5CE6 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-apple-gray-100 dark:bg-apple-gray-950 text-apple-gray-900 dark:text-white">
+    <header class="game-gradient text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight">Monster Survivors</h1>
+            <p class="text-xl md:text-2xl text-center max-w-3xl mx-auto mt-3 font-medium">Epic battles await in this action-packed adventure!</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-0 sm:px-0 py-6">
+        <section class="mb-10">
+            <div class="bg-white dark:bg-apple-gray-900 rounded-2xl shadow-xl overflow-hidden max-w-6xl mx-auto">
+                <div class="relative" style="padding-top: 60vh; min-height: 600px;">
+                    <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.HTML" 
+                            class="absolute top-0 left-0 w-full h-full" 
+                            frameborder="0" 
+                            allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                            referrerpolicy="origin"
+                            title="Monster Survivors Online Game">
+                    </iframe>
+                    <div id="fallback" class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+                        <img src="https://img.freepik.com/free-vector/medieval-battle-scene-with-knight-fighting-dragon_107791-16624.jpg" alt="Monster Survivors Game" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex flex-col items-center justify-end" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0) 100%);">
+                            <div class="absolute top-6 right-6 bg-apple-red text-white py-2 px-6 rounded-full font-bold shadow-lg animate-pulse-slow text-lg">
+                                PLAY FREE
+                            </div>
+                            <div class="w-full max-w-5xl mx-auto px-6 py-12 flex flex-col items-center">
+                                <div class="flex flex-col md:flex-row items-center justify-between w-full mb-8">
+                                    <div class="mb-6 md:mb-0">
+                                        <h2 class="text-white text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">MONSTER SURVIVORS</h2>
+                                        <p class="text-white text-xl md:text-2xl font-medium drop-shadow-md" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Battle • Collect • Survive!</p>
+                                    </div>
+                                    <a href="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.HTML" target="_blank" rel="noopener noreferrer" class="bg-apple-blue hover:bg-apple-darkblue text-white font-bold py-5 px-12 rounded-xl transition duration-300 flex items-center text-2xl shadow-xl transform hover:scale-105 animate-bounce-gentle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                        </svg>
+                                        PLAY NOW
+                                    </a>
+                                </div>
+                                <div class="bg-black bg-opacity-40 p-5 rounded-xl w-full backdrop-blur-sm border border-opacity-30 border-white">
+                                    <div class="flex flex-wrap justify-center gap-6 text-white">
+                                        <div class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-green" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-lg">Free to Play</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-orange" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-lg">Action Packed</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-lg">100+ Monsters</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-purple" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                                            </svg>
+                                            <span class="text-lg">Multiple Characters</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 flex justify-center">
+                                    <a href="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.HTML" target="_blank" rel="noopener noreferrer" class="text-white hover:text-apple-yellow transition-colors">
+                                        <span class="text-lg font-medium">✦ No registration required ✦ Play instantly in browser ✦</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Check if iframe loaded correctly
+                window.addEventListener('load', function() {
+                    const iframe = document.querySelector('iframe');
+                    const fallback = document.getElementById('fallback');
+                    
+                    // Show fallback initially
+                    fallback.style.display = 'flex';
+                    
+                    // Try to detect if iframe loads properly
+                    iframe.onload = function() {
+                        // Hide fallback if iframe seems to load (might not be 100% reliable due to cross-origin)
+                        setTimeout(() => {
+                            fallback.style.display = 'none';
+                        }, 1000);
+                    };
+                    
+                    // If iframe errors, ensure fallback is shown
+                    iframe.onerror = function() {
+                        fallback.style.display = 'flex';
+                    };
+                });
+            </script>
+        </section>
+
+        <section class="px-4 sm:px-6 mb-12 max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center game-gradient text-transparent bg-clip-text">About Monster Survivors</h2>
+            <div class="bg-white dark:bg-apple-gray-900 rounded-2xl shadow-lg p-8 card-hover">
+                <p class="mb-4 text-lg">Monster Survivors is an action-packed adventure where you battle endless waves of monsters! Choose your hero, collect power-ups, and upgrade your abilities to become stronger as you face increasingly difficult challenges.</p>
+                <p class="mb-4 text-lg">With easy-to-learn controls and exciting gameplay, you'll be hooked from the first minute! Challenge yourself to beat your high score or compete with friends to see who can survive the longest.</p>
+                <p class="text-lg font-medium text-apple-blue dark:text-apple-teal">Ready for the challenge? Play directly in your browser - no downloads required!</p>
+            </div>
+        </section>
+
+        <section class="px-4 sm:px-6 mb-12 max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-hover">
+                    <div class="bg-apple-green bg-opacity-10 dark:bg-opacity-20 rounded-t-2xl p-4">
+                        <h2 class="text-3xl font-bold text-apple-green text-center">How to Play</h2>
+                    </div>
+                    <div class="bg-white dark:bg-apple-gray-900 rounded-b-2xl shadow-lg p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <span class="text-lg">Use WASD or arrow keys to move your character around the map</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <span class="text-lg">Your character attacks automatically when enemies are nearby</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <span class="text-lg">Collect shiny gems to level up and gain new abilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <span class="text-lg">Choose new powers or upgrade existing ones when you level up</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-green flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <span class="text-lg">Grab special items to make your character even stronger</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card-hover">
+                    <div class="bg-apple-orange bg-opacity-10 dark:bg-opacity-20 rounded-t-2xl p-4">
+                        <h2 class="text-3xl font-bold text-apple-orange text-center">Game Features</h2>
+                    </div>
+                    <div class="bg-white dark:bg-apple-gray-900 rounded-b-2xl shadow-lg p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-orange flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-lg">Multiple awesome heroes with unique special abilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-orange flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-lg">Over 100 different monsters to battle in epic combat</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-orange flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-lg">Progressive difficulty - the longer you survive, the harder it gets!</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-orange flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-lg">Cool environments and exciting game worlds to explore</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-orange flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-lg">Unlock achievements and discover rare special items</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 sm:px-6 mb-16 max-w-6xl mx-auto">
+            <div class="card-hover">
+                <div class="bg-apple-red bg-opacity-10 dark:bg-opacity-20 rounded-t-2xl p-4">
+                    <h2 class="text-3xl font-bold text-apple-red text-center">Pro Tips & Strategies</h2>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-b-2xl shadow-lg p-8">
+                    <p class="mb-6 text-lg font-medium">Want to be the ultimate monster survivor? Follow these expert tips:</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <span class="text-lg">Keep moving! Standing still will quickly get you surrounded</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <span class="text-lg">Choose upgrades that work well with your hero's special abilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <span class="text-lg">Don't ignore defensive powers - they're super important later!</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <span class="text-lg">Create space between monster groups to avoid getting trapped</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <span class="text-lg">Plan your path to collect experience gems efficiently</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-apple-red flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <span class="text-lg">Learn how monsters move so you can dodge their attacks better</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 sm:px-6 mb-12 max-w-6xl mx-auto">
+            <div class="bg-apple-blue bg-opacity-10 dark:bg-opacity-20 rounded-2xl p-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-apple-blue dark:text-apple-teal">Ready for Battle?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Join thousands of players battling monsters and setting high scores. The adventure awaits!</p>
+                <a href="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.HTML" target="_blank" rel="noopener noreferrer" class="inline-block bg-apple-blue hover:bg-apple-darkblue text-white font-bold py-4 px-10 rounded-xl transition duration-300 text-xl shadow-lg transform hover:scale-105">
+                    Start Your Adventure Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="game-gradient text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-xl font-medium mb-2">Monster Survivors Online</p>
+                <p class="mb-4">&copy; 2024 MonsterSurvivorsWorld.online - All Rights Reserved</p>
+                <p class="text-sm opacity-80 max-w-2xl mx-auto">Monster Survivors is an action-packed survival game where you battle endless waves of monsters. Free to play directly in your browser - no downloads required!</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
